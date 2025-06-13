@@ -11,30 +11,38 @@
     />
   </head>
   <body>
-    <footer>
-      <div>
-        <!--Flex Container-->
-        <div>
+    <footer class="bg-teal-600 p-6 font-sans rounded-xl shadow-lg mt-8">
+      <!--Flex Container-->
+      <div class="container mx-auto px-6 flex flex-col">
+        <div
+          class="w-11/12 mx-auto flex flex-col md:flex-row gap-8 justify-between items-start md:items-center py-8"
+        >
           <!--First Child-->
-          <div>
-            <h2>Subscribe to our newsletter for updates.</h2>
-            <form action="#">
-              <label for="email">
-                <input
-                  type="email"
-                  name="Email"
-                  id="email"
-                  placeholder="Email Address"
-                  required
-                />
-                <button>Subscribe</button>
-              </label>
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-900">
+              Subscribe to our newsletter for updates.
+            </h2>
+            <form action="#" class="flex flex-col sm:flex-row gap-4">
+              <label for="email" class="sr-only">Email Address</label>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Email Address"
+                required
+                class="rounded-md px-4 py-2 w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-orange-400"
+              />
+              <button
+                class="bg-orange-600 text-white text-sm px-6 py-2 rounded-md font-semibold hover:bg-orange-700 transition-colors duration-200"
+              >
+                Subscribe
+              </button>
             </form>
           </div>
           <!--End of First Child-->
           <!--Second Child-->
-          <div>
-            <h3>Quick Link</h3>
+          <div class="md:w-1/4 mb-8 md:mb-0">
+            <h3 class="font-bold mb-2 text-lg">Quick Link</h3>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Who We Are</a></li>
@@ -43,8 +51,8 @@
           </div>
           <!--End of Second Child-->
           <!--Third Child-->
-          <div>
-            <h3>Technologies</h3>
+          <div class="md:w-1/4">
+            <h3 class="font-bold mb-2 text-lg">Technologies</h3>
             <ul>
               <li><a href="#">HTML</a></li>
               <li><a href="#">CSS</a></li>
@@ -54,10 +62,11 @@
           <!--End of Third Child-->
         </div>
         <!--End of Flex Container-->
-        <hr />
+        <hr class="my-8 border-t-2 border-orange-600 w-11/12 mx-auto" />
         <!--Image-->
         <a href="#">
           <img
+            class="w-60 h-7 mx-auto mb-8"
             src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
             alt="CodeSpace Logo"
           />
